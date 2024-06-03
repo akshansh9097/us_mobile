@@ -1,0 +1,16 @@
+:root {
+  --bs-green: #06ae41;
+  --bs-second-green: #18ee95;
+  --bs-white: #ffffff;
+  --bs-gray: #4a5568;
+  --bs-black: #1a202c;
+  --bs-gray-lite: #718096;
+  --bs-gray-100: #f7f7fa;
+  --bs-gray-200: #e7daed;
+  --bs-gray-300: #f9f9ff;
+  --bs-gray-400: #d9d9d9;
+  --bs-gray-500: #e7daed;
+  --bs-gradient: linear-gradient(#18ee95, #06ae41);
+  --bs-gradient-2: linear-gradient(#f1f1f5, #e4ecf7);
+  --bs-gradient-3: linear-gradient(to right, #18ee95 15%, #06ae41);
+}

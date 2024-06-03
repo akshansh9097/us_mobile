@@ -1,0 +1,886 @@
+@import url(root.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================== first page start======================= */
+
+.navbar {
+  background-color: var(--bs-white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 5px 5px -8px;
+}
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+  height: 3px;
+  width: 100%;
+  background: var(--bs-gradient-3);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+.nav-link:hover {
+  color: var(--bs-green);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-link::after {
+    width: 25%;
+  }
+}
+
+.navbar-toggler {
+  color: var(--bs-white);
+  border: none;
+}
+
+.navbar-toggler i {
+  color: var(--bs-green);
+}
+
+.button-24 {
+  background: var(--bs-gradient);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: var(--bs-white);
+  cursor: pointer;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  padding: 12px 14px;
+}
+.button-24:hover {
+  background: var(--bs-white);
+  color: var(
+    --bs-green
+  ); /* Adjusted to match the green color used in the hover state */
+  border: 1px solid var(--bs-green); /* Border in hover state */
+  box-sizing: border-box;
+}
+
+.button-24:active {
+  background: var(--bs-white);
+  color: var(
+    --bs-green
+  ); /* Adjusted to match the green color used in the hover state */
+  border: none; /* Removed border in active state */
+  box-sizing: border-box;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}
+
+#hero-page {
+  /* width: 100%; */
+  height: 95%;
+  border-bottom: 1px solid var(--bs-gray-500);
+  margin-top: 10%;
+}
+
+.Great {
+  font-size: 45px;
+  font-weight: 300;
+}
+.Great > .Teams {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--bs-green);
+}
+
+.innovates_great {
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.innovates_great > .Products {
+  color: var(--bs-green);
+}
+
+.about {
+  color: var(--bs-gray);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn-success {
+  background-image: var(--bs-gradient);
+  border-radius: 5px;
+  border: none;
+}
+
+.get-button {
+  padding: 20px;
+  width: 180px;
+  font-size: 17px;
+  font-weight: 600;
+  transition: transform 0.4s ease-in-out;
+}
+
+.get-button:hover {
+  text-decoration: underline;
+  background: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: var(--bs-white);
+  transform: translateY(-7px);
+}
+.Ellipse {
+  position: absolute;
+  left: 30%;
+  margin-top: -28px;
+  z-index: -1;
+}
+.Ellipse img {
+  height: 60px;
+  width: 60px;
+}
+
+@media only screen and (max-width: 320px) {
+  #hero-page {
+    margin-top: 20%;
+  }
+}
+/* ========================== first page end======================= */
+
+/* ========================== services page start======================= */
+
+#service-page {
+  background-color: #f9f9ff;
+  z-index: 1;
+  border-top: 1px solid #e7daed;
+  border-bottom: 1px solid #e7daed;
+}
+#service-page .img-border {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--bs-second-green);
+}
+#service-page .owl-carousel .owl-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#service-page .card {
+  border: none;
+  min-height: 400px;
+}
+
+#service-page .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 7% 0px;
+}
+#service-page .card-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--bs-gray);
+}
+
+#service-page .owl-dot {
+  margin-top: 5%;
+}
+#service-page .owl-carousel {
+  min-height: 200px; /* Adjust this value according to your design */
+}
+
+#service-page .item {
+  margin-bottom: 20px; /* Add margin at the bottom of each item */
+  margin-left: 20px;
+}
+
+#service-page .owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+}
+
+#service-page .owl-theme .owl-dots .owl-dot.active span {
+  background: var(--bs-green);
+}
+
+/* ========================== services page end======================= */
+
+/* ========================== aboutpage page start======================= */
+
+.line1 {
+  height: 10px;
+  width: 50px;
+  border-top: 4px solid var(--bs-second-green);
+}
+
+.About-us {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--bs-black);
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--bs-gray-lite);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.read-more-button {
+  text-decoration: none;
+  color: var(--bs-green);
+  font-size: 14px;
+  font-weight: 600;
+}
+.read-more-button > i {
+  padding-left: 10px;
+}
+.drives {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.Ellipse2 {
+  position: absolute;
+  left: 4%;
+  margin-top: -72px;
+  z-index: -1;
+}
+.Ellipse2 img {
+  height: 60px;
+  width: 60px;
+}
+
+.Ellipse3 {
+  position: absolute;
+  left: 60%;
+  z-index: -1;
+}
+.Ellipse3 img {
+  height: 60px;
+  width: 60px;
+}
+
+.line2 {
+  height: 10px;
+  width: 50px;
+  border-top: 4px solid var(--bs-second-green);
+  margin-left: 50%;
+}
+@media only screen and (max-width: 425px) {
+  .drives {
+    font-size: 17px;
+    font-weight: 700;
+  }
+  .line2 {
+    margin-left: 45%;
+  }
+}
+
+/*  get in touch page  */
+.contactpage {
+  background: var(--bs-gradient-2);
+  border-radius: 10px;
+}
+.button-5 {
+  align-items: center;
+  background: var(--bs-gradient);
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  text-decoration: none;
+  transition: all 250ms;
+  width: 262px;
+}
+
+.button-5:hover,
+.button-5:focus {
+  /* background-color: #fb8332; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  /* background-color: #c85000; */
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+/* ========================== aboutpage page end======================= */
+
+/* ========================== drivepage page start======================= */
+
+#drive-page {
+  border-top: 2px solid #e7daed;
+  border-bottom: 2px solid #e7daed;
+  background-color: var(--bs-gray-100);
+}
+/* ========================== drivepage page end======================= */
+
+/* ========================== caseStudies page start======================= */
+
+#casestudies .card {
+  flex-direction: row;
+  /* align-items: center; */
+  margin-top: 20px;
+  border: 1px solid #e7daed;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card-title {
+  font-weight: bold;
+}
+
+#casestudies .card img {
+  width: 50%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.card-footer {
+  background-color: none;
+  border-top: none;
+}
+
+.card-footerr {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #casestudies .card img {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #casestudies .card img {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #casestudies .card img {
+    width: 100%; /* Adjust image width for smaller screens */
+  }
+  #casestudies .card {
+    display: flex;
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Align items at center */
+    height: auto;
+  }
+}
+/* ========================== caseStudies page end======================= */
+
+/* ========================== testimonials page start ======================= */
+
+.cardd {
+  border: none;
+}
+
+.card-body {
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+}
+.testimonials .owl-carousel .owl-item img {
+  display: inline;
+  justify-content: center;
+  border-radius: 50%;
+}
+.owl-dot {
+  margin-top: 5%;
+}
+.owl-carousel {
+  min-height: 200px; /* Adjust this value according to your design */
+}
+
+.item {
+  margin-bottom: 20px; /* Add margin at the bottom of each item */
+  margin-left: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: var(--bs-green);
+}
+
+.containerr {
+  padding: 0 80px;
+}
+
+.owl-prev span,
+.owl-next span {
+  height: 60px; /* Adjust the height of the circular buttons */
+  width: 60px; /* Adjust the width of the circular buttons */
+  border-radius: 50%; /* Make the buttons circular */
+  border: 2px solid var(--bs-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-color: var(--bs-white);
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 10%;
+  font-size: 2rem !important;
+  color: var(--bs-green) !important;
+}
+.owl-prev {
+  left: 0;
+}
+
+.owl-next {
+  right: 0;
+}
+
+.line3 {
+  height: 10px;
+  width: 50px;
+  border-top: 4px solid var(--bs-second-green);
+  /* margin-left: 48%; */
+}
+
+@media only screen and (max-width: 430px) {
+  .owl-prev span,
+  .owl-next span {
+    /* height: 230px;
+width: 230px; */
+    border: 2px solid var(--bs-green);
+    border-radius: 60%;
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 90%;
+    font-size: 2rem !important;
+    color: var(--bs-green) !important;
+  }
+  .owl-prev {
+    left: 10% !important;
+  }
+
+  .owl-next {
+    right: 10% !important;
+  }
+
+  .containerr {
+    padding: 0 1px;
+  }
+}
+
+/* ========================== testimonials page end======================= */
+
+/* ========================== ourResearch event page start======================= */
+
+
+
+/* Our Research event for desktop screen */
+
+.research-card {
+  flex-direction: row;
+  margin-top: 20px;
+  border: none;
+  box-shadow: none;
+  height: auto;
+}
+
+.research-card-bodys {
+  max-width: 75%;
+  height: auto !important;
+}
+
+.Recognizing-left-border {
+  border-left: 4px solid var(--bs-second-green);
+}
+
+.Recognizing-left-border > p {
+  background: var(--bs-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Ellipse-177 {
+  position: absolute;
+  top: -18px;
+  left: calc(54% - 30px); /* Adjust as needed */
+  z-index: -1;
+}
+
+.Ellipse-177 img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.Ellipse-178 {
+  position: absolute;
+  left: 53%;
+  bottom: -14px;
+  z-index: -1;
+}
+
+.Ellipse-191 {
+  position: absolute;
+  right: -50px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+.Ellipse-192 img {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  left: 70%;
+  top: -16px;
+  z-index: -1;
+}
+
+.card-image {
+  max-height: 60%;
+}
+.research-profile-image img {
+  width: 60px;
+  height: 60px;
+}
+
+.research-card-bodyss {
+  max-width: 80%;
+  margin-left: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+  .Events-card-border {
+    /* border: 0.5px solid var(--bs-gray-lite); */
+    padding: 20px 0px 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
+
+/* Our Research event for mobile screen */
+
+.swiper-card {
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--bs-white);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* disable the dots in events */
+.swiper-pagination-bullets {
+  display: none;
+}
+
+/* ========================== ourResearch event page end======================= */
+
+/*  */
+/*===========================  our-Experties start ===========================*/
+
+/*===========================  our-Experties start for desktop screen ===========================*/
+
+#our-Experties {
+  background-color: #f7f7fa;
+  /* margin-top: 38%; */
+}
+
+.Experties-card {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;
+  padding: 35px 15px;
+  height: 100%;
+}
+.Experties-card-body {
+  padding: 3px 10px;
+  /* margin-left: 15px; */
+}
+.Experties-card > img {
+  width: 30%;
+  height: 30%;
+  object-fit: contain;
+}
+
+.Experties-card-title {
+  margin: 1% 0px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--bs-black);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.Experties-card-designation {
+  color: var(--bs-green);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Experties-card-description {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #383737;
+}
+
+.Experties-social-btn {
+  height: 30px;
+  width: 30px;
+  background-color: var(--bs-gray-400);
+}
+.Experties-social-btn a {
+  color: var(--bs-black);
+}
+
+/* <!-- Our Research Experties for mobile  --> */
+
+#Experties-page .owl-carousel .owl-item img {
+  width: 70px;
+  height: 70px;
+}
+#Experties-page .card {
+  max-height: 400px;
+}
+
+#Experties-page .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 7% 0px;
+}
+#Experties-page .card-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--bs-gray);
+}
+
+/* .owl-dot{
+  margin-top: 5%;
+ 
+}
+.owl-carousel {
+min-height: 200px;
+}
+ 
+.item {
+margin-bottom: 20px;
+margin-left: 20px;
+}
+ 
+.owl-theme .owl-dots .owl-dot span{
+width: 15px;
+height: 15px;
+}
+ 
+.owl-theme .owl-dots .owl-dot.active span{
+background: var(--bs-green);
+} */
+
+/*===========================  our-Experties start ===========================*/
+
+/*===========================  ourDiscussions start ===========================*/
+
+.Discussions {
+  border-top: 1px solid #e7daed;
+  border-bottom: 1px solid #e7daed;
+  /* margin-top: 20%; */
+}
+.Discussions-card {
+  margin-top: 2px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+a {
+  margin-right: 17px;
+
+  &:nth-child(2) {
+    background-color: var(--bs-green);
+  }
+}
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: var(--bs-green);
+  text-transform: capitalize;
+  width: 150px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* effect-1 styles  */
+
+.effect.effect-1 {
+  transition: all 0.2s linear 0s;
+
+  &:before {
+    content: "\f178";
+    font-family: FontAwesome;
+    font-size: 15px;
+    color: var(--bs-second-green);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 2px;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s linear 0s;
+  }
+
+  &:hover {
+    text-indent: -20px;
+
+    &:before {
+      opacity: 1;
+      text-indent: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 2560px) {
+  .Discussions .card img {
+    height: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .Discussions .card img {
+    height: 50% !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .Discussions .card img {
+    width: 100%;
+    height: 50% !important;
+    /* object-fit: contain; */
+  }
+}
+/*===========================  ourDiscussions end ===========================*/
+
+/* ========================== footer  start ==========================*/
+
+.list-unstyled a {
+  text-decoration: none;
+  color: var(--bs-gray-lite);
+}
+
+.list-unstyled a:hover {
+  color: var(--bs-second-green);
+}
+
+/*==========================  footer  end ==========================*/
+
+/*Akash 30-05-24 */
+
+#servicepage {
+  background-color: var(--bs-gray-100);
+  margin-top: 10%;
+}
+
+.sline-1,
+.sline-3 {
+  height: 10px;
+  width: 30px;
+  border-top: 3px solid var(--bs-second-green);
+}
+.sline-2 {
+  height: 10px;
+  width: 80px;
+  border-top: 3px solid var(--bs-second-green);
+}
+
+.accordion-button:not(.collapsed) {
+  background: #2ee59cd5;
+  color: var(--bs-black);
+}
+/* .accordion-button:hover {
+  color: var(--bs-second-green);
+} */
+
+.icon-color{
+  color: var(--bs-green);
+}
+.icon-color:hover{
+  color: var(--bs-second-green);
+}
+
+.kl-text-06ae41{
+  color: #06ae41;
+}
+.kl-text-f7f7fa{
+  color: #f7f7fa;
+}
+
+#community{
+  margin-top: 10%;
+}
+
+.choose-bg-clr{
+  color: rgb(235, 13, 13) !important;
+}
+
+.choose-img-size{
+  width: 25%;
+}
+
+.exp-img{
+  height: 80px !important;
+  width: 80px !important;
+}
